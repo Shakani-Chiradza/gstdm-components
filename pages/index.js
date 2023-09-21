@@ -11,6 +11,7 @@ import Gorge from './../public/images/gorge.jpg'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import Carousel from '@/components/carousel'
+import SecondNav from '@/components/secondNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,9 @@ export default function Home() {
     <Head>
       <title>GSTDM Travel Page</title>
     </Head>
-    <Navbar/>
+   
+   
+    <SecondNav/>
     <Carousel/>
 
     <div className='mx-auto'>
