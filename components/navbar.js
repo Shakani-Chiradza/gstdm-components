@@ -74,7 +74,7 @@ export default function Navbar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="">
-                  <Link href="/">
+                  <Link href="/destinations">
                   Destinations
                   </Link>
                 </li>

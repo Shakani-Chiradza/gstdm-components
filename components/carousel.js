@@ -28,7 +28,7 @@ export default function Carousel() {
 
   return (
     <div className="">
-      <div className="w-full h-[90vh] flex overflow-hidden m-auto">
+      <div className="w-full md:h-[90vh] h-fit flex overflow-hidden m-auto">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -52,11 +52,11 @@ export default function Carousel() {
       </div>
       <AiOutlineRight
         onClick={handleNextSlide}
-        className="absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
+        className="absolute right-0 m-auto text-5xl md:inset-y-1/2 top-32 cursor-pointer text-gray-400 z-20"
       />
       <AiOutlineLeft
         onClick={handlePrevSlide}
-        className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
+        className="absolute left-0 m-auto text-5xl md:inset-y-1/2 top-32 top cursor-pointer text-gray-400 z-20"
       />
 
       <div className="relative flex justify-center p-2 top-0">
