@@ -1,18 +1,21 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Logo from './../public/images/logo.png'
 
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  useEffect(()=>{
+    console.log(window.scrollY)
+  }, []);
   return (
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <nav className="w-full bg-gray-200 shadow fixed">
+      <nav className="w-full bg-gray-200 shadow fixed z-30">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -98,16 +101,6 @@ export default function Navbar() {
                 <li className="">
                   <Link href="/contact">
                   Well-being
-                  </Link>
-                </li>
-                <li className="">
-                  <Link href="/contact">
-                  Blog
-                  </Link>
-                </li>
-                <li className="">
-                  <Link href="/contact">
-                  The Totem Spirit
                   </Link>
                 </li>
                 <li className="text-white bg-gray-600 p-1 rounded-md">

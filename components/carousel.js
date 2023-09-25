@@ -28,10 +28,6 @@ export default function Carousel() {
 
   return (
     <div className="">
-      <AiOutlineLeft
-        onClick={handlePrevSlide}
-        className="left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
       <div className="w-full h-[90vh] flex overflow-hidden m-auto">
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -47,7 +43,6 @@ export default function Carousel() {
                   alt='images'
                   width = {1400}
                   height = {600}
-                  objectFit="contain"
                   className="animate-fadeIn"
                 />
               );
@@ -64,7 +59,7 @@ export default function Carousel() {
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
 
-      <div className="relative flex justify-center p-2">
+      <div className="relative flex justify-center p-2 top-0">
         {photos.map((_, index) => {
           return (
             <div
