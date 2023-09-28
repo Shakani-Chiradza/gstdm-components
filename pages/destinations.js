@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
 import Carousel from '@/components/carousel'
 import Africa from './../public/images/icons/africa.jpg'
 import NorthAmerica from './../public/images/icons/north-america.jpg'
@@ -15,7 +13,6 @@ import Pyramid from './../public/images/pyramid.jpg'
 export default function Destinations(){
     return(
         <div>
-        <Navbar/>
         <Carousel/>
 
         <div className='md:flex gap-10 py-10 justify-evenly grid grid-cols-4 px-5'>
@@ -257,8 +254,6 @@ export default function Destinations(){
 
 
         </div>
-
-        <Footer/>
         </div>
     )
 }

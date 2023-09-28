@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Beach from './../public/images/beach.jpg'
@@ -12,23 +12,33 @@ import Gorge from './../public/images/gorge.jpg'
 
 
 export default function Carousel() {
-    var photos = [Beach, Cave, Dunes, Egypt, Falls, Water, Gorge]
+    
+  var photos = [Beach, Cave, Dunes, Egypt, Falls, Water, Gorge]
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  var newSlide = currentSlide
+
+  useEffect(()=>{
+   const timer = setInterval(handleNextSlide, 5000);
+
+   return () => {
+    clearInterval(timer)
+   }
+  });
 
   const handleNextSlide = () => {
-    let newSlide = currentSlide === photos.length - 1 ? 0 : currentSlide + 1;
+    newSlide = currentSlide === photos.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
   };
 
   const handlePrevSlide = () => {
-    let newSlide = currentSlide === 0 ? photos.length - 1 : currentSlide - 1;
+    newSlide = currentSlide === 0 ? photos.length - 1 : currentSlide - 1;
     setCurrentSlide(newSlide);
   };
 
   return (
-    <div className="">
-      <div className="w-full md:h-[90vh] h-fit flex overflow-hidden m-auto">
+    <div className="relative">
+      <div className="w-full md:h-[100vh] h-[30vh] flex overflow-hidden m-auto">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -43,6 +53,7 @@ export default function Carousel() {
                   alt='images'
                   width = {1400}
                   height = {600}
+                  priority = {true}
                   className="animate-fadeIn"
                 />
               );
@@ -52,14 +63,14 @@ export default function Carousel() {
       </div>
       <AiOutlineRight
         onClick={handleNextSlide}
-        className="absolute right-0 m-auto text-5xl md:inset-y-1/2 top-32 cursor-pointer text-gray-400 z-20"
+        className="absolute right-0 m-auto text-5xl md:inset-y-1/2 top-[40%] cursor-pointer text-gray-400 z-20"
       />
       <AiOutlineLeft
         onClick={handlePrevSlide}
-        className="absolute left-0 m-auto text-5xl md:inset-y-1/2 top-32 top cursor-pointer text-gray-400 z-20"
+        className="absolute left-0 m-auto text-5xl md:inset-y-1/2 top-[40%] top cursor-pointer text-gray-400 z-20"
       />
 
-      <div className="relative flex justify-center p-2 top-0">
+      <div className="absolute flex justify-center p-2 align-bottom bottom-1 left-[20%] right-[20%]">
         {photos.map((_, index) => {
           return (
             <div

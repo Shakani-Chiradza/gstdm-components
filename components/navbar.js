@@ -7,19 +7,24 @@ import Logo from './../public/images/logo.png'
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const [colorChange, setColorChange] = useState(false)
+  const changeNav = () => {
+    window.scrollY > 80 ? setColorChange(true) : setColorChange(false)
+  }
   useEffect(()=>{
-    console.log(window.scrollY)
+    window.addEventListener('scroll', changeNav)
   }, []);
+  
   return (
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <nav className="w-full bg-gray-200 shadow fixed z-30">
+      <nav className={colorChange ? 'navbarChange' : 'navbar'}>
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <a href="#">
+              <Link href="/">
                 <Image
                   src = {Logo}
                   alt = "beach picture"
@@ -27,7 +32,7 @@ export default function Navbar() {
                   height = {50}
                   className='rounded'
                 />
-              </a>
+              </Link>
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -36,7 +41,7 @@ export default function Navbar() {
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-white"
+                      className="w-6 h-6"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -49,7 +54,7 @@ export default function Navbar() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-white"
+                      className="w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

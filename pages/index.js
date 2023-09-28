@@ -8,8 +8,6 @@ import Egypt from './../public/images/egypt.jpg'
 import Falls from './../public/images/falls.jpg'
 import Water from './../public/images/water.jpg'
 import Gorge from './../public/images/gorge.jpg'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
 import Carousel from '@/components/carousel'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +18,6 @@ export default function Home() {
     <Head>
       <title>GSTDM Travel Page</title>
     </Head>
-    <Navbar/>
     <Carousel/>
 
     <div className='mx-auto'>
@@ -153,7 +150,7 @@ export default function Home() {
       />
       </div>
       <div className='md:w-1/3 w-1/2 mx-auto justify-end relative'>
-      <div className='absolute bg-white md:p-10 p-5 rounded -mt-20'>
+      <div className='absolute bg-white md:p-10 p-5 rounded -mt-20 opacity-[.85]'>
         <h3 className='font-semibold'>RELAXATION AND RELAXATION</h3>
         <p>Want to escape for a few days?</p>
         <p>See more</p>
@@ -172,7 +169,6 @@ export default function Home() {
       <button className='w-1/7 bg-gray-600 px-5 py-1 rounded-md text-white'>Contact Us</button>
       </div>
     </div>
-    <Footer/>
 
     </div>
   )
