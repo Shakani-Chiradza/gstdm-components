@@ -5,15 +5,14 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Beach from './../public/images/beach.jpg'
 import Cave from './../public/images/cave.jpg'
 import Dunes from './../public/images/dunes.jpg'
-import Egypt from './../public/images/egypt.jpg'
-import Falls from './../public/images/falls.jpg'
-import Water from './../public/images/water.jpg'
 import Gorge from './../public/images/gorge.jpg'
-
+import Maldives from './../public/images/maldives.jpg'
+import Paris from './../public/images/paris.jpg'
+import Balloon from './../public/images/balloon.jpg'
 
 export default function Carousel() {
     
-  var photos = [Beach, Cave, Dunes, Egypt, Falls, Water, Gorge]
+  var photos = [Beach, Cave, Dunes, Gorge, Maldives, Paris, Balloon]
 
   const [currentSlide, setCurrentSlide] = useState(0);
   var newSlide = currentSlide

@@ -8,9 +8,16 @@ import Europe from './../public/images/icons/europe.jpg'
 import MiddleEast from './../public/images/icons/middle-east.jpg'
 import Oceania from './../public/images/icons/oceania.jpg'
 import Pyramid from './../public/images/pyramid.jpg'
+import Polynesia from './../public/images/polynesia.jpg'
+import Tropical from './../public/images/tropical.jpg'
+import { useRouter } from 'next/router'
 
 
 export default function Destinations(){
+
+    const router = useRouter()
+    console.log(router.pathname)
+    
     return(
         <div>
         <Carousel/>
@@ -251,7 +258,24 @@ export default function Destinations(){
             </div>
             <br/>
         </div>
+        </div>
 
+        <div className='grid grid-cols-2 mb-5'>
+            <div className='relative aspect-video'>
+            <Image
+                src = {Polynesia}
+                alt = "polynesia"
+                fill = {true}
+            />
+            </div>
+
+            <div className='relative aspect-video'>
+            <Image
+                src = {Tropical}
+                alt = "tropical"
+                fill = {true}
+            />
+            </div>
 
         </div>
         </div>

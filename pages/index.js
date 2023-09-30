@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import Link from 'next/link'
 import Beach from './../public/images/beach.jpg'
 import Cave from './../public/images/cave.jpg'
 import Dunes from './../public/images/dunes.jpg'
@@ -27,8 +28,9 @@ export default function Home() {
       </h1>
       <hr className='w-12 h-1 mx-auto bg-gray-600 border-0 rounded'/>
       <br/>
-      <div className='grid grid-cols-1 gap-2 w-2/3 m-auto md:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-y-3 w-2/3 m-auto md:grid-cols-2'>
       <div className='relative row-span-2'>
+      <Link href='/destinations/latin-america'>
       <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
       <div className='relative flex items-center'>
       <div className='w-10 border-t border-white'></div>
@@ -44,8 +46,10 @@ export default function Home() {
         height = {400}
         className='rounded'
       />
+      </Link>
       </div>
       <div className='relative'>
+      <Link href='/destinations/asia'>
       <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
       <div className='relative flex items-center'>
       <div className='w-10 border-t border-white'></div>
@@ -61,8 +65,10 @@ export default function Home() {
         height = {400}
         className='rounded'
       />
+      </Link>
       </div>
       <div className='row-span-2 relative'>
+      <Link href='/destinations/oceania'>
       <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
       <div className='relative flex items-center'>
       <div className='w-10 border-t border-white'></div>
@@ -78,8 +84,10 @@ export default function Home() {
         height = {400}
         className='rounded'
       />
+      </Link>
       </div>
       <div className='relative'>
+      <Link href='/destinations/africa'>
       <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
       <div className='relative flex items-center'>
       <div className='w-10 border-t border-white'></div>
@@ -95,8 +103,10 @@ export default function Home() {
         height = {400}
         className='rounded'
       />
+      </Link>
       </div>
       <div className='relative'>
+      <Link href='/destinations/europe'>
       <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
       <div className='relative flex items-center'>
       <div className='w-10 border-t border-white'></div>
@@ -112,8 +122,10 @@ export default function Home() {
         height = {400}
         className='rounded'
       />
+      </Link>
       </div>
       <div className='relative'>
+      <Link href='/destinations/middle-east'>
       <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
       <div className='relative flex items-center'>
       <div className='w-10 border-t border-white'></div>
@@ -129,11 +141,14 @@ export default function Home() {
         height = {400}
         className='rounded'
       />
+      </Link>
       </div>
       </div>
       <br/>
       <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600'>
-      <button className='w-full py-3 text-gray-600'>SEE ALL DESTINATIONS</button>
+      <Link href='/destinations'>
+      <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>SEE ALL DESTINATIONS</button>
+      </Link>
       </div>
       <br/>
 
@@ -149,8 +164,8 @@ export default function Home() {
         className='rounded'
       />
       </div>
-      <div className='md:w-1/3 w-1/2 mx-auto justify-end relative'>
-      <div className='absolute bg-white md:p-10 p-5 rounded -mt-20 opacity-[.85]'>
+      <div className='mx-auto justify-end relative'>
+      <div className='absolute bg-white md:p-10 p-5 rounded -mt-20 opacity-[.85] left-[20%] right-[20%]'>
         <h3 className='font-semibold'>RELAXATION AND RELAXATION</h3>
         <p>Want to escape for a few days?</p>
         <p>See more</p>
@@ -161,7 +176,7 @@ export default function Home() {
       <br/>
 
       <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600 mt-10'>
-      <button className='w-full py-3 text-gray-600'>ALL DESIRES</button>
+      <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>ALL DESIRES</button>
       </div>
       <br/>
 
