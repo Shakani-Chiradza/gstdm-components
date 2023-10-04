@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Logo from './../public/images/logo.png'
+import LogoNoBG from './../public/images/logo-nobg.png'
 
 
 export default function Navbar() {
@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link href="/">
                 <Image
-                  src = {Logo}
+                  src = {LogoNoBG}
                   alt = "beach picture"
                   width = {50}
                   height = {50}
@@ -84,27 +84,27 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/blogs">
+                  <Link href="/hotelslodges">
                   Hotels & Lodges
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/about">
+                  <Link href="/villas">
                   Villas
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/contact">
+                  <Link href="/desires">
                   Your Desires
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/contact">
+                  <Link href="/routes">
                   Routes
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/contact">
+                  <Link href="/wellbeing">
                   Well-being
                   </Link>
                 </li>

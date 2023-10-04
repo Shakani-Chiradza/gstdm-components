@@ -53,7 +53,7 @@ export default function Carousel() {
                   width = {1400}
                   height = {600}
                   priority = {true}
-                  className="animate-fadeIn"
+                  className="imgStyle"
                 />
               );
             }

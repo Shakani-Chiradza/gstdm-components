@@ -1,102 +1,18 @@
 import Image from 'next/image'
 import Carousel from '@/components/carousel'
-import Africa from './../public/images/icons/africa.jpg'
-import NorthAmerica from './../public/images/icons/north-america.jpg'
-import LatinAmerica from './../public/images/icons/latin-america.jpg'
-import Asia from './../public/images/icons/asia.jpg'
-import Europe from './../public/images/icons/europe.jpg'
-import MiddleEast from './../public/images/icons/middle-east.jpg'
-import Oceania from './../public/images/icons/oceania.jpg'
+import Continents from '@/components/continents'
 import Pyramid from './../public/images/pyramid.jpg'
 import Polynesia from './../public/images/polynesia.jpg'
 import Tropical from './../public/images/tropical.jpg'
-import { useRouter } from 'next/router'
+import LogoNoBG from './../public/images/logo-nobg.png'
+import Link from 'next/link'
 
 
 export default function Destinations(){
-
-    const router = useRouter()
-    console.log(router.pathname)
-    
     return(
         <div>
         <Carousel/>
-
-        <div className='md:flex gap-10 py-10 justify-evenly grid grid-cols-4 px-5'>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {Africa}
-                alt = "africa"
-                width = {25}
-                height = {25}
-                className='mx-auto'
-            />
-            <p>AFRICA</p>
-            </div>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {LatinAmerica}
-                alt = "africa"
-                width = {30}
-                height = {30}
-                className='mx-auto'
-            />
-            <p>LATIN AMERICA</p>
-            </div>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {Asia}
-                alt = "africa"
-                width = {25}
-                height = {25}
-                className='mx-auto'
-            />
-            <p>ASIA</p>
-            </div>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {MiddleEast}
-                alt = "africa"
-                width = {25}
-                height = {25}
-                className='mx-auto'
-            />
-            <p>MIDDLE EAST</p>
-            </div>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {NorthAmerica}
-                alt = "africa"
-                width = {25}
-                height = {25}
-                className='mx-auto'
-            />
-            <p>NORTH AMERICA</p>
-            </div>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {Europe}
-                alt = "africa"
-                width = {25}
-                height = {25}
-                className='mx-auto'
-            />
-            <p>EUROPE</p>
-            </div>
-            <div className='grid grid-cols-1'>
-            <Image
-                src = {Oceania}
-                alt = "africa"
-                width = {25}
-                height = {25}
-                className='mx-auto'
-            />
-            <p>OCEANIA</p>
-            </div>
-        </div>
-
-        <hr className='w-[90%] h-[1px] mx-auto bg-gray-300 border-0 rounded mb-5'/>
-        <br/>
+        <Continents/>
 
         <div className='py-10 text-gray-600'>
         <div className='grid md:grid-cols-2 grid-cols-1'>
@@ -260,13 +176,16 @@ export default function Destinations(){
         </div>
         </div>
 
-        <div className='grid grid-cols-2 mb-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 mb-5'>
             <div className='relative aspect-video'>
+            <Link href="/hotelslodges">
             <Image
                 src = {Polynesia}
                 alt = "polynesia"
                 fill = {true}
             />
+            <p className='absolute text-center top-1/2 left-1/2 -translate-x-2/4 -translate-y-1/2 text-white text-4xl font-semibold'>Hotels & Lodges</p>
+            </Link>
             </div>
 
             <div className='relative aspect-video'>
@@ -275,9 +194,29 @@ export default function Destinations(){
                 alt = "tropical"
                 fill = {true}
             />
+            <p className='absolute text-center top-1/2 left-1/2 -translate-x-2/4 -translate-y-1/2 text-white text-4xl font-semibold'>Villas</p>
             </div>
 
         </div>
+        <br/>
+
+        <div className='w-full md:flex justify-center items-center relative py-10'>
+        <div classname="justify-center items-center w-full">
+        <Image
+        src = {LogoNoBG}
+        alt = "Logo"
+        width = {100}
+        height = {100}
+        className='mx-auto pb-5'
+      />
+        </div>
+
+        <div className='md:absolute md:text-right text-center mr-10 w-full md:bottom-[45%]'>
+      <button className='w-1/7 bg-gray-600 px-3 py-1 rounded-md text-white'>Contact Us</button>
+      </div>
+
+      </div>
+
         </div>
     )
 }
