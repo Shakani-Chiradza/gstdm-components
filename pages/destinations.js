@@ -189,33 +189,18 @@ export default function Destinations(){
             </div>
 
             <div className='relative aspect-video'>
+            <Link href='/villas'>
             <Image
                 src = {Tropical}
                 alt = "tropical"
                 fill = {true}
             />
             <p className='absolute text-center top-1/2 left-1/2 -translate-x-2/4 -translate-y-1/2 text-white text-4xl font-semibold'>Villas</p>
+            </Link>
             </div>
 
         </div>
         <br/>
-
-        <div className='w-full md:flex justify-center items-center relative py-10'>
-        <div classname="justify-center items-center w-full">
-        <Image
-        src = {LogoNoBG}
-        alt = "Logo"
-        width = {100}
-        height = {100}
-        className='mx-auto pb-5'
-      />
-        </div>
-
-        <div className='md:absolute md:text-right text-center mr-10 w-full md:bottom-[45%]'>
-      <button className='w-1/7 bg-gray-600 px-3 py-1 rounded-md text-white'>Contact Us</button>
-      </div>
-
-      </div>
 
         </div>
     )

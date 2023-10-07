@@ -103,11 +103,6 @@ export default function Navbar() {
                   Routes
                   </Link>
                 </li>
-                <li className="">
-                  <Link href="/wellbeing">
-                  Well-being
-                  </Link>
-                </li>
                 <li className="text-white bg-gray-600 p-1 rounded-md">
                   <Link href="/contact">
                   Contact Us

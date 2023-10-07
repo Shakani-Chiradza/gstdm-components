@@ -1,20 +1,20 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from 'next/router'
-import AfricaBlack from "./../public/images/Icons/africa-black.png"
-import AfricaWhite from "./../public/images/Icons/africa-white.png"
-import AsiaBlack from "./../public/images/Icons/asia-black.png"
-import AsiaWhite from "./../public/images/Icons/asia-white.png"
-import EuropeBlack from "./../public/images/Icons/europe-black.png"
-import EuropeWhite from "./../public/images/Icons/europe-white.png"
-import LatinAmericaBlack from "./../public/images/Icons/latin-america-black.png"
-import LatinAmericaWhite from "./../public/images/Icons/latin-america-white.png"
-import MiddleEastBlack from "./../public/images/Icons/middle-east-black.png"
-import MiddleEastWhite from "./../public/images/Icons/middle-east-white.png"
-import NorthAmericaBlack from "./../public/images/Icons/north-america-black.png"
-import NorthAmericaWhite from "./../public/images/Icons/north-america-white.png"
-import OceaniaBlack from "./../public/images/Icons/oceania-black.png"
-import OceaniaWhite from "./../public/images/Icons/oceania-white.png"
+import AfricaBlack from "./../public/images/icons/africa-black.png"
+import AfricaWhite from "./../public/images/icons/africa-white.png"
+import AsiaBlack from "./../public/images/icons/asia-black.png"
+import AsiaWhite from "./../public/images/icons/asia-white.png"
+import EuropeBlack from "./../public/images/icons/europe-black.png"
+import EuropeWhite from "./../public/images/icons/europe-white.png"
+import LatinAmericaBlack from "./../public/images/icons/latin-america-black.png"
+import LatinAmericaWhite from "./../public/images/icons/latin-america-white.png"
+import MiddleEastBlack from "./../public/images/icons/middle-east-black.png"
+import MiddleEastWhite from "./../public/images/icons/middle-east-white.png"
+import NorthAmericaBlack from "./../public/images/icons/north-america-black.png"
+import NorthAmericaWhite from "./../public/images/icons/north-america-white.png"
+import OceaniaBlack from "./../public/images/icons/oceania-black.png"
+import OceaniaWhite from "./../public/images/icons/oceania-white.png"
 
 
 export default function Continents(){
@@ -22,8 +22,8 @@ export default function Continents(){
     const router = useRouter()
     return(
         <div>
-        <div className='md:flex gap-10 py-10 justify-evenly grid grid-cols-4 px-5'>
-            <div className='grid grid-cols-1'>
+        <div className='md:flex gap-10 py-10 justify-evenly grid grid-cols-3 px-5'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/africa' className={router.pathname=='/destinations/africa' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/africa' ? AfricaWhite : AfricaBlack}
@@ -32,10 +32,10 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>AFRICA</p>
+            <p className="text-center">AFRICA</p>
             </Link>
             </div>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/latin-america' className={router.pathname=='/destinations/latin-america' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/latin-america' ? LatinAmericaWhite : LatinAmericaBlack}
@@ -44,10 +44,10 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>LATIN AMERICA</p>
+            <p className="text-center">LATIN AMERICA</p>
             </Link>
             </div>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/asia'  className={router.pathname=='/destinations/asia' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/asia' ? AsiaWhite : AsiaBlack}
@@ -56,10 +56,10 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>ASIA</p>
+            <p className="text-center">ASIA</p>
             </Link>
             </div>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/middle-east'  className={router.pathname=='/destinations/middle-east' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/middle-east' ? MiddleEastWhite : MiddleEastBlack}
@@ -68,10 +68,10 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>MIDDLE EAST</p>
+            <p className="text-center">MIDDLE EAST</p>
             </Link>
             </div>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/north-america'  className={router.pathname=='/destinations/north-america' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/north-america' ? NorthAmericaWhite : NorthAmericaBlack}
@@ -80,10 +80,10 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>NORTH AMERICA</p>
+            <p className="text-center">NORTH AMERICA</p>
             </Link>
             </div>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/europe'  className={router.pathname=='/destinations/europe' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/europe' ? EuropeWhite : EuropeBlack}
@@ -92,10 +92,10 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>EUROPE</p>
+            <p className="text-center">EUROPE</p>
             </Link>
             </div>
-            <div className='grid grid-cols-1'>
+            <div className='grid grid-cols-1 w-full'>
             <Link href='/destinations/oceania'  className={router.pathname=='/destinations/oceania' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
                 src = {router.pathname=='/destinations/oceania' ? OceaniaWhite : OceaniaBlack}
@@ -104,7 +104,7 @@ export default function Continents(){
                 height = {25}
                 className='mx-auto'
             />
-            <p>OCEANIA</p>
+            <p className="text-center">OCEANIA</p>
             </Link>
             </div>
             

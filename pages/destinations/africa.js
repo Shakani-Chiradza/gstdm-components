@@ -3,7 +3,6 @@ import Carousel from '@/components/carousel'
 import Continents from '@/components/continents'
 import Polynesia from './../../public/images/polynesia.jpg'
 import Tropical from './../../public/images/tropical.jpg'
-import LogoNoBG from './../../public/images/logo-nobg.png'
 import Zebra from './../../public/images/continents/africa/zebra.jpg'
 import Link from 'next/link'
 
@@ -200,23 +199,6 @@ export default function Africa(){
 
         </div>
         <br/>
-
-        <div className='w-full md:flex justify-center items-center relative py-10'>
-        <div classname="justify-center items-center w-full">
-        <Image
-        src = {LogoNoBG}
-        alt = "Logo"
-        width = {100}
-        height = {100}
-        className='mx-auto pb-5'
-      />
-        </div>
-
-        <div className='md:absolute md:text-right text-center mr-10 w-full md:top-1/2'>
-      <button className='w-1/7 bg-gray-600 px-3 py-1 rounded-md text-white'>Contact Us</button>
-      </div>
-
-      </div>
 
         </div>
     )
