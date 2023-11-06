@@ -3,7 +3,7 @@ import Carousel from "@/components/carousel"
 export default function Contact() {
     return(
         <div>
-        <Carousel/>
+        <Carousel phrase="GET IN TOUCH" line="WITH US"/>
             <div>
                 <p className="text-center pt-10 text-3xl font-semibold mb-10 font-mono text-gray-600">Contact Us</p>
                 <p className="justify-center w-[80%] mx-auto text-gray-600 font-mono italic">Getaway Specialised Tours and Destination Management operates exclusively by appointment. Our office hours are from 08:00 to 17:00 GMT+2, however you can email us or contact us through the form below at any time.
@@ -14,9 +14,10 @@ export default function Contact() {
             </div>
             <div className="w-[80%] mx-auto">
                 <p className="font-semibold text-lg font-mono text-gray-600">Agency Contact Details</p>
-                <p className="text-gray-600 font-mono">Email: <span className="italic">gstdm@gmail.com</span></p>
-                <p className="text-gray-600 font-mono">Donald: <span className="italic">+263 00 000 0000</span></p>
-                <p className="text-gray-600 font-mono">Mark: <span className="italic">+263 00 000 0000</span></p>
+                <p className="text-gray-600 font-mono">Address: <span className="italic">180 Fife Avenue, Harare</span></p>
+                <p className="text-gray-600 font-mono">Email: <span className="italic">info@getawayspecialisedtours.com</span></p>
+                <p className="text-gray-600 font-mono">Tel: <span className="italic">+263 8688 007619</span></p>
+                <p className="text-gray-600 font-mono">Phone: <span className="italic">+263 71 864 5863</span></p>
             </div>
 
             <div className="w-[80%] mx-auto mt-10">

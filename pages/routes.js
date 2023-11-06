@@ -1,6 +1,10 @@
+import Carousel from "@/components/carousel"
+
 export default function Routes() {
     return (
-        <div></div>
+        <div>
+            <Carousel phrase="DISCOVER" line="OUR ROUTES"/>
+        </div>
     )
     
 }

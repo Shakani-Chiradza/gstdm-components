@@ -10,7 +10,7 @@ import Maldives from './../public/images/maldives.jpg'
 import Paris from './../public/images/paris.jpg'
 import Balloon from './../public/images/balloon.jpg'
 
-export default function Carousel() {
+export default function Carousel({phrase, line}) {
     
   var photos = [Beach, Cave, Dunes, Gorge, Maldives, Paris, Balloon]
 
@@ -46,6 +46,15 @@ export default function Carousel() {
           {photos.map((image, index) => {
             if (index === currentSlide) {
               return (
+                <div key={image.id} className="relative">
+                <div className="absolute z-10 md:text-5xl text-3xl text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3">
+                  <div className="flex items-center justify-center">
+                    <div className='w-10 border-t-[1px] border-white border'></div>
+                    <span className='text-center md:text-2xl text-lg mx-2'>{phrase}</span>
+                    <div className='w-10 border-t-[1px] border-white border'></div>
+                  </div>
+                  <p className="text-center">{line}</p>
+                </div>
                 <Image
                   key={image.id}
                   src={image}
@@ -55,6 +64,7 @@ export default function Carousel() {
                   priority = {true}
                   className="imgStyle"
                 />
+                </div>
               );
             }
           })}

@@ -11,7 +11,7 @@ import Hotel15 from './../public/images/hotels/15.jpg'
 export default function HotelsLodges() {
     return (
         <div>
-            <Carousel/>
+            <Carousel phrase="INDULGE" line="IN OUR HOTELS"/>
 
             <div>
                 <div className="w-[90%] mx-auto my-5">

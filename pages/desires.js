@@ -13,7 +13,7 @@ import Water1 from "./../public/images/desires/water-sports/1.jpg"
 export default function Desires() {
     return (
         <div>
-            <Carousel/>
+            <Carousel phrase="EMBRACE" line="YOUR DESIRES"/>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-10 w-[90%] mx-auto text-gray-600">
                 <div>

@@ -24,9 +24,9 @@ export default function Continents(){
         <div>
         <div className='md:flex gap-10 py-10 justify-evenly grid grid-cols-3 px-5'>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/africa' className={router.pathname=='/destinations/africa' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/africa' className={router.asPath=='/destinations/africa' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/africa' ? AfricaWhite : AfricaBlack}
+                src = {router.asPath=='/destinations/africa' ? AfricaWhite : AfricaBlack}
                 alt = "africa"
                 width = {25}
                 height = {25}
@@ -36,9 +36,9 @@ export default function Continents(){
             </Link>
             </div>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/latin-america' className={router.pathname=='/destinations/latin-america' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/latin-america' className={router.asPath=='/destinations/latin-america' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/latin-america' ? LatinAmericaWhite : LatinAmericaBlack}
+                src = {router.asPath=='/destinations/latin-america' ? LatinAmericaWhite : LatinAmericaBlack}
                 alt = "latin america"
                 width = {25}
                 height = {25}
@@ -48,9 +48,9 @@ export default function Continents(){
             </Link>
             </div>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/asia'  className={router.pathname=='/destinations/asia' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/asia'  className={router.asPath=='/destinations/asia' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/asia' ? AsiaWhite : AsiaBlack}
+                src = {router.asPath=='/destinations/asia' ? AsiaWhite : AsiaBlack}
                 alt = "asia"
                 width = {25}
                 height = {25}
@@ -60,9 +60,9 @@ export default function Continents(){
             </Link>
             </div>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/middle-east'  className={router.pathname=='/destinations/middle-east' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/middle-east'  className={router.asPath=='/destinations/middle-east' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/middle-east' ? MiddleEastWhite : MiddleEastBlack}
+                src = {router.asPath=='/destinations/middle-east' ? MiddleEastWhite : MiddleEastBlack}
                 alt = "middle east"
                 width = {25}
                 height = {25}
@@ -72,9 +72,9 @@ export default function Continents(){
             </Link>
             </div>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/north-america'  className={router.pathname=='/destinations/north-america' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/north-america'  className={router.asPath=='/destinations/north-america' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/north-america' ? NorthAmericaWhite : NorthAmericaBlack}
+                src = {router.asPath=='/destinations/north-america' ? NorthAmericaWhite : NorthAmericaBlack}
                 alt = "north america"
                 width = {25}
                 height = {25}
@@ -84,9 +84,9 @@ export default function Continents(){
             </Link>
             </div>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/europe'  className={router.pathname=='/destinations/europe' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/europe'  className={router.asPath=='/destinations/europe' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/europe' ? EuropeWhite : EuropeBlack}
+                src = {router.asPath=='/destinations/europe' ? EuropeWhite : EuropeBlack}
                 alt = "europe"
                 width = {25}
                 height = {25}
@@ -96,9 +96,9 @@ export default function Continents(){
             </Link>
             </div>
             <div className='grid grid-cols-1 w-full'>
-            <Link href='/destinations/oceania'  className={router.pathname=='/destinations/oceania' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
+            <Link href='/destinations/oceania'  className={router.asPath=='/destinations/oceania' ? 'bg-gray-300 p-3 rounded text-gray-500' : 'bg-transparent p-3 rounded'}>
             <Image
-                src = {router.pathname=='/destinations/oceania' ? OceaniaWhite : OceaniaBlack}
+                src = {router.asPath=='/destinations/oceania' ? OceaniaWhite : OceaniaBlack}
                 alt = "oceania"
                 width = {25}
                 height = {25}

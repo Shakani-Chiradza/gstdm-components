@@ -19,7 +19,7 @@ export default function Home() {
     <Head>
       <title>GSTDM Travel Page</title>
     </Head>
-    <Carousel/>
+    <Carousel phrase="WELCOME" line="TO YOUR BEST VACATION"/>
 
     <div className='mx-auto'>
     <br/>
@@ -28,117 +28,117 @@ export default function Home() {
       </h1>
       <hr className='w-12 h-1 mx-auto bg-gray-600 border-0 rounded'/>
       <br/>
-      <div className='grid grid-cols-1 gap-y-3 w-2/3 m-auto md:grid-cols-2'>
-      <div className='relative row-span-2'>
+      <div className='grid grid-cols-1 gap-y-3 gap-x-3 w-2/3 m-auto md:grid-cols-2'>
+      <div className='relative row-span-2 aspect-[3/4]'>
       <Link href='/destinations/latin-america'>
-      <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
-      <div className='relative flex items-center'>
+      <div className='absolute z-20 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
+      <div className='relative flex items-center justify-center'>
       <div className='w-10 border-t border-white'></div>
       <span className='text-center text-2xl mx-2'>VISIT</span>
       <div className='w-10 border-t border-white'></div>
       </div>
       <p className='text-center text-3xl'>LATIN AMERICA</p>
       </div>
+      <div className='z-10 absolute bg-black/30 w-full h-full rounded'></div>
       <Image
         src = {Falls}
         alt = "beach picture"
-        width = {400}
-        height = {400}
-        className='rounded'
+        fill={true}
+        className='rounded z-0'
       />
       </Link>
       </div>
-      <div className='relative'>
+      <div className='relative aspect-square'>
       <Link href='/destinations/asia'>
-      <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
-      <div className='relative flex items-center'>
+      <div className='absolute z-20 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
+      <div className='relative flex items-center justify-center'>
       <div className='w-10 border-t border-white'></div>
       <span className='text-center text-2xl mx-2'>VISIT</span>
       <div className='w-10 border-t border-white'></div>
       </div>
       <p className='text-center text-3xl'>ASIA</p>
       </div>
+      <div className='z-10 absolute bg-black/30 w-full h-full rounded'></div>
       <Image
         src = {Cave}
         alt = "beach picture"
-        width = {400}
-        height = {400}
+        fill={true}
         className='rounded'
       />
       </Link>
       </div>
-      <div className='row-span-2 relative'>
+      <div className='row-span-2 relative aspect-[3/4]'>
       <Link href='/destinations/oceania'>
-      <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
-      <div className='relative flex items-center'>
+      <div className='absolute z-20 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
+      <div className='relative flex items-center justify-center'>
       <div className='w-10 border-t border-white'></div>
       <span className='text-center text-2xl mx-2'>VISIT</span>
       <div className='w-10 border-t border-white'></div>
       </div>
       <p className='text-center text-3xl'>OCEANIA</p>
       </div>
+      <div className='z-10 absolute bg-black/30 w-full h-full rounded'></div>
       <Image
         src = {Water}
         alt = "beach picture"
-        width = {400}
-        height = {400}
+        fill={true}
         className='rounded'
       />
       </Link>
       </div>
-      <div className='relative'>
+      <div className='relative aspect-square'>
       <Link href='/destinations/africa'>
-      <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
-      <div className='relative flex items-center'>
+      <div className='absolute z-20 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
+      <div className='relative flex items-center justify-center'>
       <div className='w-10 border-t border-white'></div>
       <span className='text-center text-2xl mx-2'>VISIT</span>
       <div className='w-10 border-t border-white'></div>
       </div>
       <p className='text-center text-3xl'>AFRICA</p>
       </div>
+      <div className='z-10 absolute bg-black/30 w-full h-full rounded'></div>
       <Image
         src = {Egypt}
         alt = "beach picture"
-        width = {400}
-        height = {400}
+        fill={true}
         className='rounded'
       />
       </Link>
       </div>
-      <div className='relative'>
+      <div className='relative aspect-video'>
       <Link href='/destinations/europe'>
-      <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
-      <div className='relative flex items-center'>
+      <div className='absolute z-20 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
+      <div className='relative flex items-center justify-center'>
       <div className='w-10 border-t border-white'></div>
       <span className='text-center text-2xl mx-2'>VISIT</span>
       <div className='w-10 border-t border-white'></div>
       </div>
       <p className='text-center text-3xl'>EUROPE</p>
       </div>
+      <div className='z-10 absolute bg-black/30 w-full h-full rounded'></div>
       <Image
         src = {Beach}
         alt = "beach picture"
-        width = {400}
-        height = {400}
+        fill={true}
         className='rounded'
       />
       </Link>
       </div>
-      <div className='relative'>
+      <div className='relative aspect-video'>
       <Link href='/destinations/middle-east'>
-      <div className='absolute z-10 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
-      <div className='relative flex items-center'>
+      <div className='absolute z-20 text-white top-1/3 left-1/2 -translate-x-2/4 -translate-y-1/3'>
+      <div className='relative flex items-center justify-center'>
       <div className='w-10 border-t border-white'></div>
       <span className='text-center text-2xl mx-2'>VISIT</span>
       <div className='w-10 border-t border-white'></div>
       </div>
       <p className='text-center text-3xl'>MIDDLE EAST</p>
       </div>
+      <div className='z-10 absolute bg-black/30 w-full h-full rounded'></div>
       <Image
         src = {Dunes}
         alt = "beach picture"
-        width = {400}
-        height = {400}
+        fill={true}
         className='rounded'
       />
       </Link>
@@ -176,7 +176,9 @@ export default function Home() {
       <br/>
 
       <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600 mt-10'>
-      <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>ALL DESIRES</button>
+        <Link href='/desires'>
+          <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>ALL DESIRES</button>
+        </Link>
       </div>
       <br/>
     </div>

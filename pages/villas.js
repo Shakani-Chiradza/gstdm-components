@@ -21,7 +21,7 @@ import Villa16 from "./../public/images/villas/16.jpg"
 export default function Villas() {
     return (
         <div>
-            <Carousel/>
+            <Carousel phrase="RELAX" line="IN OUR VILLAS"/>
 
             <div className="w-[90%] mx-auto mt-10">
                 <p className="text-lg text-gray-600 font-mono italic justify-center">Welcome to our extraordinary collection of villas, where luxury and serenity blend seamlessly to create 

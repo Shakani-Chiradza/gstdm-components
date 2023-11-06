@@ -11,7 +11,7 @@ import Link from 'next/link'
 export default function Destinations(){
     return(
         <div>
-        <Carousel/>
+        <Carousel phrase="EXPLORE" line="OUR DESTINATIONS"/>
         <Continents/>
 
         <div className='py-10 text-gray-600'>

@@ -7,7 +7,7 @@ export default function Bottom() {
     return(
         <div>
         <div className='w-full md:flex justify-center items-center relative py-10'>
-        <div classname="justify-center items-center w-full">
+        <div className="justify-center items-center w-full">
         <Image
         src = {LogoNoBG}
         alt = "Logo"
