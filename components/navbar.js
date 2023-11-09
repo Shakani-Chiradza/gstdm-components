@@ -98,11 +98,6 @@ export default function Navbar() {
                   Your Desires
                   </Link>
                 </li>
-                <li className="">
-                  <Link href="/routes">
-                  Routes
-                  </Link>
-                </li>
                 <li className="text-white bg-gray-600 p-1 rounded-md">
                   <Link href="/contact">
                   Contact Us

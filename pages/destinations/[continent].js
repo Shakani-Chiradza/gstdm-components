@@ -4,8 +4,8 @@ import Slides from '@/components/images'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
-import Polynesia from './../../public/images/polynesia.jpg'
-import Tropical from './../../public/images/tropical.jpg'
+import Polynesia from './../../public/images/hotels/14.jpg'
+import Tropical from './../../public/images/villas/5.jpg'
 import path from 'path'
 
 
@@ -53,7 +53,13 @@ export default function projectPage({specificContinentData, hasError}) {
       const router = useRouter();
     
       if (hasError) {
-        return <h1>Error - please try another page route</h1>
+        return (
+            <div className='w-[100%] h-[100vh]'>
+                <div className='relative top-1/3 left-[30%] right[30%] w-[50%]'>
+                    <h1 className='text-4xl text-justify'>Error - please try another page route</h1>
+                </div>
+            </div>
+        )
       }
     
       if (router.isFallback) {
@@ -68,9 +74,11 @@ export default function projectPage({specificContinentData, hasError}) {
         <div className='py-10 text-gray-600'>
             {specificContinentData.details.map((country, index) => (
                 <div className='grid md:grid-cols-2 grid-cols-1' key={index}>
+                <Link href={country.link}>
                 <Slides url={country.country}/>
+                </Link>
 
-            <div className='md:px-0 px-5'>
+            <div className='md:px-0 px-5 pt-3'>
                 <h2 className='text-2xl pb-3'>{country.country.toUpperCase()}</h2>
                 <p className='pb-3 md:w-3/4'>{country.description}</p>
                 <div className='grid grid-cols-3 pb-5'>
@@ -87,8 +95,10 @@ export default function projectPage({specificContinentData, hasError}) {
                         <p>{country.population}</p>
                     </div>
                 </div>
+                <Link href={country.link} className='hover:opacity-50'>
                 <p className='text-xl'>See More</p>
                 <hr className='w-24 h-1 bg-gray-600 border-0 rounded'/>
+                </Link>
             </div>
             <br/>
         </div>

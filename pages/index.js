@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Link from 'next/link'
 import Beach from './../public/images/beach.jpg'
@@ -11,7 +10,6 @@ import Water from './../public/images/water.jpg'
 import Gorge from './../public/images/gorge.jpg'
 import Carousel from '@/components/carousel'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -168,7 +166,10 @@ export default function Home() {
       <div className='absolute bg-white md:p-10 p-5 rounded -mt-20 opacity-[.85] left-[20%] right-[20%]'>
         <h3 className='font-semibold'>RELAXATION AND RELAXATION</h3>
         <p>Want to escape for a few days?</p>
+        <Link href="/desires" className='hover:opacity-50'>
         <p>See more</p>
+        <hr className='w-20 h-1 bg-gray-600 border-0 rounded'/>
+        </Link>
       </div>
       </div>
       <br/>

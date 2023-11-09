@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Carousel from "@/components/carousel"
+import Link from "next/link"
 import Villa1 from "./../public/images/villas/1.jpg"
 import Villa2 from "./../public/images/villas/2.jpg"
 import Villa3 from "./../public/images/villas/3.jpg"
@@ -32,6 +33,12 @@ export default function Villas() {
                 <br/>
                 <br/>
                 <p className="text-lg text-gray-600 font-mono italic">Please contact us for additional information.</p>
+
+                <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600 mt-5'>
+                    <Link href='https://gstdm-ten.vercel.app'>
+                        <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>BOOK A VILLA</button>
+                    </Link>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-3">
                     <div className="relative row-span-2 aspect-[3/4]">
@@ -146,6 +153,12 @@ export default function Villas() {
                             fill={true}
                         />
                     </div>
+                </div>
+
+                <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600 mt-5'>
+                    <Link href='https://gstdm-ten.vercel.app'>
+                        <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>BOOK A VILLA</button>
+                    </Link>
                 </div>
             </div>
         </div>

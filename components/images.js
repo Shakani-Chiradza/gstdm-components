@@ -92,14 +92,13 @@ export default function Slides({url}){
     }
 
     return (
-        <div className='relative'>
-        <Image
-        src = {images[url]}
-        alt = "View of the country"
-        width={500}
-        height={500}
-        className='mx-auto px-5'
-    />
-    </div>
+        <div className='relative aspect-video md:aspect-square md:w-[75%] md:h-[50vh] md:mx-auto'>
+            <Image
+            src = {images[url]}
+            alt = "View of the country"
+            fill={true}
+            className='mx-auto px-5 md:px-0'
+            />
+        </div>
     )
 }

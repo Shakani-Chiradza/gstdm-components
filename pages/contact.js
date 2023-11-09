@@ -1,4 +1,6 @@
 import Carousel from "@/components/carousel"
+import Head from "next/head"
+import Script from "next/script"
 
 export default function Contact() {
     return(
@@ -24,29 +26,29 @@ export default function Contact() {
                 <form className="w-full">
                     <div className="md:flex">
                         <div className="md:w-1/2">
-                            <input id='firstname' placeholder="First names" className="border border-gray-400 rounded-sm mb-5 px-3 py-2 md:w-[95%] w-full"/>
+                            <input id='firstname' placeholder="First names" required className="border border-gray-400 rounded-sm mb-5 px-3 py-2 md:w-[95%] w-full"/>
                         </div>
                         <div className="w-full">
                             <input id='lastname' placeholder="Last names" className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
                         </div>
                     </div>
                     <div className="w-full">
-                        <input id='email' placeholder="Email Adress" className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
+                        <input type="email" id='email' placeholder="Email Adress" required className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
                     </div>
                     <div className="md:flex">
                         <div className="md:w-1/2">
-                            <input id='countrycode' placeholder="Country Code" className="border border-gray-400 rounded-sm mb-5 px-3 py-2 md:w-[95%] w-full"/>
+                            <input id='countrycode' placeholder="Country Code" required className="border border-gray-400 rounded-sm mb-5 px-3 py-2 md:w-[95%] w-full"/>
                         </div>
                         <div className="w-full">
-                            <input id='number' placeholder="Phone Number" className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
+                            <input id='number' placeholder="Phone Number" required className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
                         </div>
                     </div>
                     <div className="w-full">
-                        <textarea id='message' rows='10' placeholder="Type your message here" className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
+                        <textarea id='message' rows='10' placeholder="Type your message here" required className="border border-gray-400 rounded-sm mb-5 px-3 py-2 w-full"/>
                     </div>
 
                     <div>
-                        <button className="bg-gray-600 rounded text-white px-3 py-2">Submit</button>
+                        <button className="bg-gray-600 rounded text-white px-3 py-2" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
