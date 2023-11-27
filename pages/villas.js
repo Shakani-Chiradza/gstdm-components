@@ -35,7 +35,7 @@ export default function Villas() {
                 <p className="text-lg text-gray-600 font-mono italic">Please contact us for additional information.</p>
 
                 <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600 mt-5'>
-                    <Link href='https://gstdm-ten.vercel.app'>
+                     <Link target="_blank" href='https://gstdm-ten.vercel.app'>
                         <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>BOOK A VILLA</button>
                     </Link>
                 </div>
@@ -156,7 +156,7 @@ export default function Villas() {
                 </div>
 
                 <div className='justify-center md:w-1/5 w-1/2 mx-auto items-center border border-solid border-gray-600 mt-5'>
-                    <Link href='https://gstdm-ten.vercel.app'>
+                     <Link target="_blank" href='https://gstdm-ten.vercel.app'>
                         <button className='w-full py-3 text-gray-600 hover:bg-gray-600 hover:text-white'>BOOK A VILLA</button>
                     </Link>
                 </div>

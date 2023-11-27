@@ -23,7 +23,7 @@ export default function Contact() {
             </div>
 
             <div className="w-[80%] mx-auto mt-10">
-                <form className="w-full">
+                {/* <form className="w-full">
                     <div className="md:flex">
                         <div className="md:w-1/2">
                             <input id='firstname' placeholder="First names" required className="border border-gray-400 rounded-sm mb-5 px-3 py-2 md:w-[95%] w-full"/>
@@ -50,7 +50,7 @@ export default function Contact() {
                     <div>
                         <button className="bg-gray-600 rounded text-white px-3 py-2" type="submit">Submit</button>
                     </div>
-                </form>
+                </form> */}
             </div>
         </div>
     )
